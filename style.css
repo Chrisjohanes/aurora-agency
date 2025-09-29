@@ -1,0 +1,58 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Hero */
+.hero h1 {
+  animation: fadeDown 1s ease-in-out;
+}
+.hero p {
+  animation: fadeUp 1.2s ease-in-out;
+}
+@keyframes fadeDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Services cards */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* CTA Section */
+.bg-primary .btn-light {
+  transition: background-color 0.3s, color 0.3s;
+}
+.bg-primary .btn-light:hover {
+  background-color: #f8f9fa;
+  color: #0d6efd;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
